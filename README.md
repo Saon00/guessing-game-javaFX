@@ -15,6 +15,12 @@ Please, change these paths and values according to your PC setups. And you've to
 
 ### Here is some Sample Pictures about this Project. And you can also [watch a demo video][3] on "Youtube".
 
+#### A simple UI for this Game. Player Name Box, Guess Number Box, Submit Button, Win-Lose number.
+ - ![1](https://user-images.githubusercontent.com/57843701/111962947-2cfca780-8b1d-11eb-95ec-ea4c91f2f1b2.png)
+#### You've to enter your name and a valid number. If your number is higher or lower then the secret number then you'll see some messages below to help you guess correctly.
+ - ![2](https://user-images.githubusercontent.com/57843701/111962970-338b1f00-8b1d-11eb-9382-182ba4d0dec0.png)
+#### After a Lose or Win your score will be updated automatically.
+ - ![3](https://user-images.githubusercontent.com/57843701/111962986-384fd300-8b1d-11eb-9420-10d79e493996.png)
 
 
 
