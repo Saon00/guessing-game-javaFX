@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+            prefWidth="1080.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/14.0.2.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane layoutX="235.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;"
+              AnchorPane.bottomAnchor="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0">
+            <children>
+                <Text fill="WHITE" fontSmoothingType="LCD" layoutX="130.0" layoutY="80.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Number Guessing Game" wrappingWidth="819.1484375">
+                    <font>
+                        <Font name="System Bold" size="60.0"/>
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Pane layoutX="100.0" layoutY="160.0" prefHeight="348.0" prefWidth="881.0"
+              style="-fx-background-color: #e6e3a1;">
+            <children>
+                <TextField fx:id="playerName" layoutX="248.0" layoutY="90.0" prefHeight="40.0" prefWidth="357.0"
+                           promptText="Enter Your Name">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </TextField>
+                <TextField fx:id="guessNumber" layoutX="248.0" layoutY="170.0" prefHeight="40.0" prefWidth="357.0"
+                           promptText="Guess a Number">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </TextField>
+                <Text fill="#0000004e" fontSmoothingType="LCD" layoutX="639.0" layoutY="198.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="[ from &quot;1&quot; - &quot;10&quot; ]">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Text>
+                <Text fontSmoothingType="LCD" layoutX="701.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      styleClass="textUnderLine" text="Win">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Text>
+                <Text fontSmoothingType="LCD" layoutX="779.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0"
+                      styleClass="textUnderLine" text="Lose">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Text>
+                <JFXButton fx:id="submitButton" layoutX="242.0" layoutY="250.0" onAction="#submitNumber"
+                           prefHeight="40.0" prefWidth="357.0"
+                           style="-fx-background-color: #19691a; -fx-text-fill: white;" text="Submit">
+                    <font>
+                        <Font size="20.0"/>
+                    </font>
+                </JFXButton>
+                <Label fx:id="winNumber" layoutX="717.0" layoutY="61.0" text="0">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="loseNumber" layoutX="800.0" layoutY="61.0" text="0">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="chancesMessage" contentDisplay="CENTER" layoutX="284.0" layoutY="39.0" prefHeight="25.0"
+                       prefWidth="313.0" style="-fx-text-fill: black;" text="You've 3 more Chance(s)"
+                       textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="100.0" layoutY="535.0" prefHeight="127.0" prefWidth="881.0">
+            <children>
+                <Label fx:id="messageLabel" contentDisplay="CENTER" layoutX="192.0" layoutY="51.0" prefHeight="25.0"
+                       prefWidth="497.0" styleClass="text" stylesheets="@Design.css" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
